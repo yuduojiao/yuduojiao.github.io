@@ -7,25 +7,25 @@
  * @param  {[type]} s      [description]
  * @return {[type]}        [description]
  */
-//  var countTime = function (target, d, h, m, s) {
-//  	var cur = new Date().getTime();
-//  	var his = new Date(target).getTime();
-//  	diff = calcDifference(cur - his);
-//  	_countTime(d, h, m, s);
-//  	setInterval(function() {
-//  		_countTime(d, h, m, s);
-//  	}, 1000);
-//  }
+ var countTime = function (target, d, h, m, s) {
+ 	var cur = new Date().getTime();
+ 	var his = new Date(target).getTime();
+ 	diff = calcDifference(cur - his);
+ 	_countTime(d, h, m, s);
+ 	setInterval(function() {
+ 		_countTime(d, h, m, s);
+ 	}, 1000);
+ }
 
-var countTime = function (target, d, h, m, s) {
-	var cur = new Date().getTime();
-	var his = new Date(target).getTime();
-	diff = calcDifference(his - cur);
-	_countTime(d, h, m, s);
-	setInterval(function() {
-		_countTime(d, h, m, s);
-	}, 1000);
-}
+// var countTime = function (target, d, h, m, s) {
+// 	var cur = new Date().getTime();
+// 	var his = new Date(target).getTime();
+// 	diff = calcDifference(his - cur);
+// 	_countTime(d, h, m, s);
+// 	setInterval(function() {
+// 		_countTime(d, h, m, s);
+// 	}, 1000);
+// }
 
 /**
  * 更改显示值

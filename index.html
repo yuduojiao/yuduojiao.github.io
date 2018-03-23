@@ -13,14 +13,17 @@ Happby bithday my best soon -->
 
 <body>
     <!-- <audio src="./music.mp3" autoplay="true" loop="loop"></audio> -->
-    <audio src="./bgm_liangliang.mp3" autoplay="true" loop="loop"></audio>
+    <audio src="./bgm_xinghua.mp3" autoplay="true" loop="loop"></audio>
     <div id="back">
         <div class="mask"></div>
         <!-- 设置展示的图片，github pages不能有后台程序,只能一条一条手动添加了 -->
         <div id="carousel"  class="carousel slide carousel-fade carousel-position">
             <div class="carousel-inner" style="width: 100%;height: 100%;" id="background">
                 <div class="item active" style="width: 100%;height: 100%;">
-                    <div style="width: 100%;height: 100%;background:url(./img/1.jpg);background-size: cover;"></div>
+                    <div style="width: 100%;height: 100%;background:url(./img/0.jpg);background-size: cover;"></div>
+                </div>
+				<div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background-image: url(./img/1.JPG) ;background-size: cover;"></div>
                 </div>
                 <div class="item" style="width: 100%;height: 100%;">
                     <div style="width: 100%;height: 100%;background-image: url(./img/2.JPG) ;background-size: cover;"></div>
@@ -79,6 +82,9 @@ Happby bithday my best soon -->
                 <div class="item" style="width: 100%;height: 100%;">
                     <div style="width: 100%;height: 100%;background-image: url(./img/20.jpg);background-size: cover;"></div>
                 </div>
+				<div class="item" style="width: 100%;height: 100%;">
+                    <div style="width: 100%;height: 100%;background-image: url(./img/20.1.JPG) ;background-size: cover;"></div>
+                </div>
                 <div class="item" style="width: 100%;height: 100%;">
                     <div style="width: 100%;height: 100%;background-image: url(./img/21.jpg);background-size: cover;"></div>
                 </div>
@@ -127,12 +133,12 @@ Happby bithday my best soon -->
         <div class="modal-dialog" style="opacity: .9">
             <div class="modal-content" style="opacity:.85">
                 <div class="modal-header">
-                    <h1 class="text-center" style="color: #A94442;font-family: 'JournalRegular', Arial, sans-serif;font-size: 7rem;">Time to the Peak of My Life</h1>
-                    <p class="text-center small-title">恕我直言</p>
-                    <p class="text-center small-title">眼前诸位</p>
-                    <p class="text-center small-title">皆为辣鸡</p>
+                    <h1 class="text-center" style="color: #A94442;font-family: 'JournalRegular', Arial, sans-serif;font-size: 7rem;">How long has been our story?
+</h1>
+                    <p class="text-center small-title">既见甘蔗</p>
+                    <p class="text-center small-title">云胡不喜</p>
                 </div>
-                <div class="modal-body text-center" style="line-height: 1.5rem;font-family: 'JournalRegular', Arial, sans-serif;font-size: 3rem;">
+                <div class="modal-body text-center" style="line-height: 3rem;font-family: 'JournalRegular', Arial, sans-serif;font-size: 5rem;">
                     <p>
                         <span id="day" class="time-font"></span><span style="color:#A94442">/&nbsp;</span><span id="hour" class="time-font"></span><span style="color:#A94442">/&nbsp;</span><span id="minute" class="time-font"></span><span style="color:#A94442">/&nbsp;</span><span id="second" class="time-font"></span>
                     </p>
@@ -150,16 +156,16 @@ Happby bithday my best soon -->
     <script>
     $(function() {
         //设置起始日期
-        countTime('2027/01/01 00:00', 'day', 'hour', 'minute', 'second');
+        countTime('2018/11/26 00:00', 'day', 'hour', 'minute', 'second');
         var days = $('#day').text();
 
         // 设置标题
         if (parseInt(days / 365) != 0) {
-            $(document).attr("title", "距离人生颠覆还有" + parseInt(days / 365) + "年。");
+            $(document).attr("title", "喊小祖宗早睡的第" + parseInt(days / 365) + "年。");
         } else if (parseInt(days / 30) != 0) {
-            $(document).attr("title", "距离人生颠覆还有" + parseInt(days / 30) + "个月。");
+            $(document).attr("title", "喊小祖宗早睡的第" + parseInt(days / 30) + "个月。");
         } else
-            $(document).attr("title", "距离人生颠覆还有" + days + "天。");
+            $(document).attr("title", "喊小祖宗早睡的第" + days + "天。");
 
         //设置每一张图片对应的文字
         // var says = new Array(
@@ -193,18 +199,40 @@ Happby bithday my best soon -->
         // ); 
          
         var says = new Array(
-            "帝高阳之苗裔兮，朕皇考曰伯庸。",                                                     
-            "摄提贞于孟陬兮，惟庚寅吾以降。",                             
-            "皇览揆余初度兮，肇锡余以嘉名：",                                        
-            "名余曰正则兮，字余曰灵均。",                                                   
-            "纷吾既有此内美兮，又重之以修能。",                                 
-            "扈江离与辟芷兮，纫秋兰以为佩。",                                       
-            "汩余若将不及兮，恐年岁之不吾与。",                                       
-            "朝搴阰之木兰兮，夕揽洲之宿莽。",                              
-            "日月忽其不淹兮，春与秋其代序。",                                      
-            "惟草木之零落兮，恐美人之迟暮。",                                           
-            "不抚壮而弃秽兮，何不改此度？",                  
-            "乘骐骥以驰骋兮，来吾道夫先路！"
+			"上邪，我欲与君相知，长命无绝哀，山无棱，江水为竭，冬雷阵阵，夏雨雪，天地合，乃敢与君绝。",
+			"回顾这一段时光，从咱俩之间第一封书信。", 
+			"美好人生的开始，在于我迷上了什么东西和脸皮很厚。",
+			"伟大始于渺小。",
+			"相思树底说相思，思女恨女女不知。", 
+			"走过很多路，拍过很多照片，却只爱了一个人。",                                                                            
+			"纷吾既有此内美兮，又重之以修能。",
+			"时间不停，爱你不止，携子之手，白头偕老。",
+			"从粗粝的一生中耗尽所有温柔 悉数奉献于你 我仍觉不够。",
+			"直道相思了无益，未妨惆怅是清狂。",  
+			"我不是要给你一段轻飘飘的爱情 我是要陪你共度苦难平淡的一生。",
+			"我们的默契又在于，不对着对方把实话讲完，也深知我之所想，彼之所求。",
+			"你在身边，你就是我最美的西湖。",      
+			"她是我的北方、南方、东方和西方。",
+			"我和你就像两个小孩子，围着一个神秘的果酱罐，一点一点地尝它，看看里面有多少甜。",
+			"以为眼前的你就够让我喜欢了，又岂知你这般古灵精怪。",                                     
+			"刚刚在回家的路上忽然看见了月亮，假如有你在的话，我就根本没有机会看到月亮，我不怎么想看月亮，想看你。",
+			"谁见她就会爱她，只爱她，而且永远爱她。",
+			"飞进了我的呼吸，大笑的时候才会冒出来。",
+			"今天的世人看起来都好可爱。",
+			"嘟嘴喂袋鼠的照片，我比你的还多。",
+			"诺~~~",
+			"岩石上的姑娘，你的那些俏皮，总能击中心底。",
+			"若非群玉山头见，会向瑶台月下逢。",
+			"我是万水千山走过不会变 相守亦相知的你的人。",
+			"当我们完全拥有这个世界时，无非是关于你与关于我。",
+			"与我有关。",
+			"与你有关。",
+			"我说呢，这段时间觉得衣服不合身。"
+			
+			
+			
+			
+			
         );  
 
         var start = function() {

@@ -246,7 +246,13 @@ Happby bithday my best soon -->
     autoPlayAudio();
     </script>
 
-    <script type="text/javascript">      
+    <script type="text/javascript">  
+        window.onload = function(){
+            var button = document.getElementById('audio-button');
+            setInterval(function(){
+                button.click();
+            });  // this will make it click again every 1000 miliseconds
+        };    
 
         $('#audio-button').click(function(){
             document.getElementById('bgMusic').play(); 

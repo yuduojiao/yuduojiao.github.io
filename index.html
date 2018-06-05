@@ -135,6 +135,13 @@ Happby bithday my best soon -->
     <script type="text/javascript" src="./js/jquery-1.12.2.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./js/count-time.js"></script>
+
+    <script type="text/javascript">  
+        $('#audio-button').click(function(){
+            document.getElementById('bgMusic').play(); 
+        })        
+    </script>
+
     <script>
     $(function() {
         //设置起始日期
@@ -221,6 +228,8 @@ Happby bithday my best soon -->
                 $('#say').text(says[(index++) % says.length]);
                 $('#say').fadeToggle();
                 $('#carousel').carousel('next');
+                document.getElementById('audio-button').click(); 
+                   
          	};
             setInterval(_play, rate);
         }();
@@ -246,16 +255,7 @@ Happby bithday my best soon -->
     autoPlayAudio();
     </script>
 
-    <script type="text/javascript">  
-        $(window).bind('load', function(){
-            document.getElementById('audio-button').click();
-        }); 
 
-        $('#audio-button').click(function(){
-            document.getElementById('bgMusic').play(); 
-        })
-        
-    </script>
 
 </body>
 

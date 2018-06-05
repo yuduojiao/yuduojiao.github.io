@@ -13,7 +13,8 @@ Happby bithday my best soon -->
 
 <body>
     <!-- <audio src="./music.mp3" autoplay="true" loop="loop"></audio> -->
-    <audio src="./bgm_xinghuaxianwaiyu.mp3" id="bgMusic" autoplay="true" loop="loop"></audio>
+    <audio src="./bgm_xinghuaxianwaiyu.mp3" id="bgMusic" loop="loop"></audio>
+    <button>a</button>
 
     <div id="back">
         <div class="mask"></div>
@@ -264,10 +265,9 @@ Happby bithday my best soon -->
         };
     autoPlayAudio();
     </script>
-    <script>
-        $(function(){  
-            $('#bgMusic').trigger('play');  
-        });
+
+    <script type="text/javascript">
+        document.getElementById('bgMusic').play(); 
     </script>
 
 </body>

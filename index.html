@@ -14,6 +14,7 @@ Happby bithday my best soon -->
 <body>
     <!-- <audio src="./music.mp3" autoplay="true" loop="loop"></audio> -->
     <audio src="./bgm_xinghuaxianwaiyu.mp3" autoplay="true" loop="loop"></audio>
+
     <div id="back">
         <div class="mask"></div>
         <!-- 设置展示的图片，github pages不能有后台程序,只能一条一条手动添加了 -->
@@ -245,6 +246,26 @@ Happby bithday my best soon -->
 
     });
     </script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> 
+    <script>
+       function autoPlayAudio() {
+            wx.config({
+                // 配置信息, 即使不正确也能使用 wx.ready
+                debug: false,
+                appId: '',
+                timestamp: 1,
+                nonceStr: '',
+                signature: '',
+                jsApiList: []
+            });
+            wx.ready(function() {
+                var globalAudio=document.getElementById("bgMusic");
+                globalAudio.play();
+            });
+        };
+    // 解决ios音乐不自动播放的问题
+    autoPlayAudio();
+    </script> 
 </body>
 
 </html>
